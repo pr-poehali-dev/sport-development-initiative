@@ -132,6 +132,29 @@ const Index = () => {
     'https://cdn.poehali.dev/files/cf2c0e17-a02c-491f-9796-0379710ea67c.jpg'
   ];
 
+  const boats = [
+    {
+      name: 'Каяк для слалома',
+      description: 'Профессиональный каяк для гребного слалома',
+      image: 'https://cdn.poehali.dev/files/placeholder-kayak-slalom.jpg'
+    },
+    {
+      name: 'Каяк для экстрима',
+      description: 'Укороченный каяк для трюков и фристайла',
+      image: 'https://cdn.poehali.dev/files/placeholder-kayak-extreme.jpg'
+    },
+    {
+      name: 'Каноэ K-1',
+      description: 'Одноместный каноэ для индивидуальных заездов',
+      image: 'https://cdn.poehali.dev/files/placeholder-canoe-k1.jpg'
+    },
+    {
+      name: 'Каноэ C-2',
+      description: 'Двухместный каноэ для командных гонок',
+      image: 'https://cdn.poehali.dev/files/placeholder-canoe-c2.jpg'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <div 
@@ -243,6 +266,41 @@ const Index = () => {
                       </div>
                     </div>
                   )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Наши лодки
+          </h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {boats.map((boat, index) => (
+              <Card 
+                key={index} 
+                className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary cursor-pointer animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
+                  <img 
+                    src={boat.image} 
+                    alt={boat.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {boat.name}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {boat.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}

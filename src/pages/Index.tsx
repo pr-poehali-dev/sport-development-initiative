@@ -83,7 +83,8 @@ const Index = () => {
   ];
 
   const teamGallery = [
-    'https://cdn.poehali.dev/files/5c5103fc-ec75-4c14-b4ec-a574e2b9764f.jpg'
+    'https://cdn.poehali.dev/files/5c5103fc-ec75-4c14-b4ec-a574e2b9764f.jpg',
+    'https://cdn.poehali.dev/files/cf2c0e17-a02c-491f-9796-0379710ea67c.jpg'
   ];
 
   return (

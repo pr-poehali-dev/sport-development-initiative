@@ -10,63 +10,51 @@ const Index = () => {
 
   const schedule = {
     'Понедельник': [
-      { time: '09:00', class: 'Начальная группа К1', trainer: 'Алексей Морозов', duration: '120 мин' },
-      { time: '14:00', class: 'Техника прохождения ворот', trainer: 'Елена Речкина', duration: '90 мин' },
-      { time: '17:00', class: 'Продвинутая группа С1', trainer: 'Игорь Быстров', duration: '120 мин' }
+      { time: '09:00', class: 'Начальная группа К1', trainer: 'Валентина Петровна', duration: '120 мин' },
+      { time: '14:00', class: 'Техника прохождения ворот', trainer: 'Николай Сергеевич', duration: '90 мин' },
+      { time: '17:00', class: 'Продвинутая группа С1', trainer: 'Валентина Петровна', duration: '120 мин' }
     ],
     'Вторник': [
-      { time: '10:00', class: 'Силовая подготовка', trainer: 'Дмитрий Сильный', duration: '90 мин' },
-      { time: '15:00', class: 'Юниорская группа', trainer: 'Елена Речкина', duration: '90 мин' },
-      { time: '18:00', class: 'Слалом на бурной воде', trainer: 'Алексей Морозов', duration: '120 мин' }
+      { time: '10:00', class: 'Силовая подготовка', trainer: 'Николай Сергеевич', duration: '90 мин' },
+      { time: '15:00', class: 'Юниорская группа', trainer: 'Валентина Петровна', duration: '90 мин' },
+      { time: '18:00', class: 'Слалом на бурной воде', trainer: 'Николай Сергеевич', duration: '120 мин' }
     ],
     'Среда': [
-      { time: '09:00', class: 'Начальная группа К1', trainer: 'Елена Речкина', duration: '120 мин' },
-      { time: '14:00', class: 'Эскимосский переворот', trainer: 'Игорь Быстров', duration: '60 мин' },
-      { time: '17:00', class: 'Командные заезды', trainer: 'Алексей Морозов', duration: '90 мин' }
+      { time: '09:00', class: 'Начальная группа К1', trainer: 'Валентина Петровна', duration: '120 мин' },
+      { time: '14:00', class: 'Эскимосский переворот', trainer: 'Николай Сергеевич', duration: '60 мин' },
+      { time: '17:00', class: 'Командные заезды', trainer: 'Валентина Петровна', duration: '90 мин' }
     ],
     'Четверг': [
-      { time: '10:00', class: 'Силовая подготовка', trainer: 'Дмитрий Сильный', duration: '90 мин' },
-      { time: '15:00', class: 'Юниорская группа', trainer: 'Елена Речкина', duration: '90 мин' },
-      { time: '18:00', class: 'Продвинутая группа С1', trainer: 'Игорь Быстров', duration: '120 мин' }
+      { time: '10:00', class: 'Силовая подготовка', trainer: 'Николай Сергеевич', duration: '90 мин' },
+      { time: '15:00', class: 'Юниорская группа', trainer: 'Валентина Петровна', duration: '90 мин' },
+      { time: '18:00', class: 'Продвинутая группа С1', trainer: 'Николай Сергеевич', duration: '120 мин' }
     ],
     'Пятница': [
-      { time: '09:00', class: 'Техника гребли', trainer: 'Алексей Морозов', duration: '90 мин' },
-      { time: '14:00', class: 'Слалом на бурной воде', trainer: 'Игорь Быстров', duration: '120 мин' },
-      { time: '17:30', class: 'Свободное катание', trainer: 'Елена Речкина', duration: '90 мин' }
+      { time: '09:00', class: 'Техника гребли', trainer: 'Валентина Петровна', duration: '90 мин' },
+      { time: '14:00', class: 'Слалом на бурной воде', trainer: 'Николай Сергеевич', duration: '120 мин' },
+      { time: '17:30', class: 'Свободное катание', trainer: 'Валентина Петровна', duration: '90 мин' }
     ],
     'Суббота': [
-      { time: '10:00', class: 'Тренировочные заезды', trainer: 'Алексей Морозов', duration: '180 мин' },
-      { time: '15:00', class: 'Прохождение трассы', trainer: 'Игорь Быстров', duration: '120 мин' }
+      { time: '10:00', class: 'Тренировочные заезды', trainer: 'Валентина Петровна', duration: '180 мин' },
+      { time: '15:00', class: 'Прохождение трассы', trainer: 'Николай Сергеевич', duration: '120 мин' }
     ],
     'Воскресенье': [
-      { time: '11:00', class: 'Восстановительная тренировка', trainer: 'Елена Речкина', duration: '90 мин' },
-      { time: '14:00', class: 'Видео-разбор техники', trainer: 'Алексей Морозов', duration: '60 мин' }
+      { time: '11:00', class: 'Восстановительная тренировка', trainer: 'Валентина Петровна', duration: '90 мин' },
+      { time: '14:00', class: 'Видео-разбор техники', trainer: 'Николай Сергеевич', duration: '60 мин' }
     ]
   };
 
   const trainers = [
     {
-      name: 'Алексей Морозов',
+      name: 'Валентина Петровна',
       specialty: 'К1, Олимпийский чемпион',
       experience: '15 лет опыта',
       image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
     },
     {
-      name: 'Елена Речкина',
-      specialty: 'К1 женщины, Мастер спорта',
+      name: 'Николай Сергеевич',
+      specialty: 'С1, Мастер спорта',
       experience: '12 лет опыта',
-      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
-    },
-    {
-      name: 'Игорь Быстров',
-      specialty: 'С1, Чемпион Европы',
-      experience: '18 лет опыта',
-      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
-    },
-    {
-      name: 'Дмитрий Сильный',
-      specialty: 'Физическая подготовка',
-      experience: '10 лет опыта',
       image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
     }
   ];

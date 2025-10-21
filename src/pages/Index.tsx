@@ -75,11 +75,14 @@ const Index = () => {
     }
   ];
 
-  const gallery = [
+  const trainingGallery = [
     'https://cdn.poehali.dev/files/e4c4a606-8f12-4fab-81fa-8f2d8fab8bdb.jpg',
     'https://cdn.poehali.dev/files/7623be99-2990-4bc5-a07e-3378bcab4f60.jpg',
     'https://cdn.poehali.dev/files/945bbafe-a063-4ff4-a447-d97af9e775a6.jpg',
-    'https://cdn.poehali.dev/files/b7247e7c-f97f-4841-8202-35056704ff93.jpg',
+    'https://cdn.poehali.dev/files/b7247e7c-f97f-4841-8202-35056704ff93.jpg'
+  ];
+
+  const teamGallery = [
     'https://cdn.poehali.dev/files/5c5103fc-ec75-4c14-b4ec-a574e2b9764f.jpg'
   ];
 
@@ -288,7 +291,7 @@ const Index = () => {
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
           
           <div className="grid md:grid-cols-2 gap-6">
-            {gallery.map((image, index) => (
+            {trainingGallery.map((image, index) => (
               <div 
                 key={index} 
                 className="aspect-video rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group animate-fade-in"
@@ -296,7 +299,32 @@ const Index = () => {
               >
                 <img 
                   src={image} 
-                  alt={`Gallery ${index + 1}`}
+                  alt={`Training ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Наша команда
+          </h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {teamGallery.map((image, index) => (
+              <div 
+                key={index} 
+                className="aspect-video rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group animate-fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <img 
+                  src={image} 
+                  alt={`Team ${index + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>

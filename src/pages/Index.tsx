@@ -48,7 +48,7 @@ const Index = () => {
       name: 'Николай Сергеевич',
       specialty: 'Мастер спорта по туризму',
       experience: '20 лет опыта',
-      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
+      image: 'https://cdn.poehali.dev/files/bd4491a5-0a7c-4514-b0e9-0883c13b51b5.jpg'
     }
   ];
 

@@ -10,96 +10,95 @@ const Index = () => {
 
   const schedule = {
     'Понедельник': [
-      { time: '08:00', class: 'Йога', trainer: 'Анна Смирнова', duration: '60 мин' },
-      { time: '10:00', class: 'Силовая тренировка', trainer: 'Дмитрий Волков', duration: '90 мин' },
-      { time: '18:00', class: 'Бокс', trainer: 'Сергей Кузнецов', duration: '75 мин' },
-      { time: '20:00', class: 'Стретчинг', trainer: 'Анна Смирнова', duration: '45 мин' }
+      { time: '09:00', class: 'Начальная группа К1', trainer: 'Алексей Морозов', duration: '120 мин' },
+      { time: '14:00', class: 'Техника прохождения ворот', trainer: 'Елена Речкина', duration: '90 мин' },
+      { time: '17:00', class: 'Продвинутая группа С1', trainer: 'Игорь Быстров', duration: '120 мин' }
     ],
     'Вторник': [
-      { time: '09:00', class: 'Кроссфит', trainer: 'Дмитрий Волков', duration: '60 мин' },
-      { time: '11:00', class: 'Плавание', trainer: 'Ольга Петрова', duration: '60 мин' },
-      { time: '19:00', class: 'Танцы', trainer: 'Мария Иванова', duration: '90 мин' }
+      { time: '10:00', class: 'Силовая подготовка', trainer: 'Дмитрий Сильный', duration: '90 мин' },
+      { time: '15:00', class: 'Юниорская группа', trainer: 'Елена Речкина', duration: '90 мин' },
+      { time: '18:00', class: 'Слалом на бурной воде', trainer: 'Алексей Морозов', duration: '120 мин' }
     ],
     'Среда': [
-      { time: '08:00', class: 'Йога', trainer: 'Анна Смирнова', duration: '60 мин' },
-      { time: '12:00', class: 'Функциональный тренинг', trainer: 'Дмитрий Волков', duration: '75 мин' },
-      { time: '18:00', class: 'Бокс', trainer: 'Сергей Кузнецов', duration: '75 мин' }
+      { time: '09:00', class: 'Начальная группа К1', trainer: 'Елена Речкина', duration: '120 мин' },
+      { time: '14:00', class: 'Эскимосский переворот', trainer: 'Игорь Быстров', duration: '60 мин' },
+      { time: '17:00', class: 'Командные заезды', trainer: 'Алексей Морозов', duration: '90 мин' }
     ],
     'Четверг': [
-      { time: '09:00', class: 'Кроссфит', trainer: 'Дмитрий Волков', duration: '60 мин' },
-      { time: '11:00', class: 'Плавание', trainer: 'Ольга Петрова', duration: '60 мин' },
-      { time: '20:00', class: 'Стретчинг', trainer: 'Анна Смирнова', duration: '45 мин' }
+      { time: '10:00', class: 'Силовая подготовка', trainer: 'Дмитрий Сильный', duration: '90 мин' },
+      { time: '15:00', class: 'Юниорская группа', trainer: 'Елена Речкина', duration: '90 мин' },
+      { time: '18:00', class: 'Продвинутая группа С1', trainer: 'Игорь Быстров', duration: '120 мин' }
     ],
     'Пятница': [
-      { time: '10:00', class: 'Силовая тренировка', trainer: 'Дмитрий Волков', duration: '90 мин' },
-      { time: '18:00', class: 'Танцы', trainer: 'Мария Иванова', duration: '90 мин' },
-      { time: '19:30', class: 'Йога', trainer: 'Анна Смирнова', duration: '60 мин' }
+      { time: '09:00', class: 'Техника гребли', trainer: 'Алексей Морозов', duration: '90 мин' },
+      { time: '14:00', class: 'Слалом на бурной воде', trainer: 'Игорь Быстров', duration: '120 мин' },
+      { time: '17:30', class: 'Свободное катание', trainer: 'Елена Речкина', duration: '90 мин' }
     ],
     'Суббота': [
-      { time: '10:00', class: 'Групповая тренировка', trainer: 'Дмитрий Волков', duration: '120 мин' },
-      { time: '14:00', class: 'Плавание', trainer: 'Ольга Петрова', duration: '60 мин' }
+      { time: '10:00', class: 'Тренировочные заезды', trainer: 'Алексей Морозов', duration: '180 мин' },
+      { time: '15:00', class: 'Прохождение трассы', trainer: 'Игорь Быстров', duration: '120 мин' }
     ],
     'Воскресенье': [
-      { time: '11:00', class: 'Восстановительная йога', trainer: 'Анна Смирнова', duration: '75 мин' },
-      { time: '15:00', class: 'Стретчинг', trainer: 'Мария Иванова', duration: '60 мин' }
+      { time: '11:00', class: 'Восстановительная тренировка', trainer: 'Елена Речкина', duration: '90 мин' },
+      { time: '14:00', class: 'Видео-разбор техники', trainer: 'Алексей Морозов', duration: '60 мин' }
     ]
   };
 
   const trainers = [
     {
-      name: 'Дмитрий Волков',
-      specialty: 'Силовые тренировки, Кроссфит',
-      experience: '8 лет опыта',
+      name: 'Алексей Морозов',
+      specialty: 'К1, Олимпийский чемпион',
+      experience: '15 лет опыта',
       image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
     },
     {
-      name: 'Анна Смирнова',
-      specialty: 'Йога, Стретчинг',
-      experience: '6 лет опыта',
+      name: 'Елена Речкина',
+      specialty: 'К1 женщины, Мастер спорта',
+      experience: '12 лет опыта',
       image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
     },
     {
-      name: 'Сергей Кузнецов',
-      specialty: 'Бокс, Единоборства',
+      name: 'Игорь Быстров',
+      specialty: 'С1, Чемпион Европы',
+      experience: '18 лет опыта',
+      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
+    },
+    {
+      name: 'Дмитрий Сильный',
+      specialty: 'Физическая подготовка',
       experience: '10 лет опыта',
-      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
-    },
-    {
-      name: 'Ольга Петрова',
-      specialty: 'Плавание, Аквааэробика',
-      experience: '7 лет опыта',
       image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
     }
   ];
 
   const sections = [
     {
-      icon: 'Dumbbell',
-      title: 'Силовые тренировки',
-      description: 'Профессиональные программы для набора мышечной массы и развития силы'
-    },
-    {
-      icon: 'Flame',
-      title: 'Кардио-зона',
-      description: 'Современное оборудование для эффективного жиросжигания'
-    },
-    {
-      icon: 'Heart',
-      title: 'Групповые занятия',
-      description: 'Йога, танцы, функциональный тренинг в энергичной атмосфере'
+      icon: 'Waves',
+      title: 'Гребной слалом К1',
+      description: 'Каяк-одиночка - классическая дисциплина для начинающих и профессионалов'
     },
     {
       icon: 'Trophy',
-      title: 'Бокс и единоборства',
-      description: 'Тренировки для всех уровней подготовки с опытными тренерами'
+      title: 'Слалом С1',
+      description: 'Каноэ-одиночка - высший пилотаж гребного слалома'
+    },
+    {
+      icon: 'Users',
+      title: 'Юниорские группы',
+      description: 'Программы подготовки для детей от 8 лет с опытными тренерами'
+    },
+    {
+      icon: 'Zap',
+      title: 'Бурная вода',
+      description: 'Искусственная трасса с регулируемым потоком для тренировок'
     }
   ];
 
   const gallery = [
-    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/6a8c5d2f-1486-4831-b320-67d5885b877e.jpg',
-    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/899f7902-75bb-40c3-a896-5536ea33c2c4.jpg',
-    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/6a8c5d2f-1486-4831-b320-67d5885b877e.jpg',
-    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/899f7902-75bb-40c3-a896-5536ea33c2c4.jpg'
+    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/45aa88e2-9024-4a5b-8675-aa73bceb40dd.jpg',
+    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/c99de954-993c-4ea7-a6b1-0a3b4a348d7b.jpg',
+    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/45aa88e2-9024-4a5b-8675-aa73bceb40dd.jpg',
+    'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/c99de954-993c-4ea7-a6b1-0a3b4a348d7b.jpg'
   ];
 
   return (
@@ -107,7 +106,7 @@ const Index = () => {
       <div 
         className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 78, 137, 0.7), rgba(255, 107, 53, 0.7)), url('https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/6a8c5d2f-1486-4831-b320-67d5885b877e.jpg')`
+          backgroundImage: `linear-gradient(rgba(0, 78, 137, 0.7), rgba(255, 107, 53, 0.7)), url('https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/45aa88e2-9024-4a5b-8675-aa73bceb40dd.jpg')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/80 via-primary/70 to-secondary/80" />
@@ -122,10 +121,10 @@ const Index = () => {
           </div>
           
           <h1 className="text-7xl md:text-8xl font-black text-white mb-6 tracking-tight drop-shadow-lg">
-            SPORTS CLUB
+            ГРЕБНОЙ СЛАЛОМ
           </h1>
           <p className="text-2xl md:text-3xl text-white/95 mb-10 font-light max-w-3xl mx-auto">
-            Раскройте свой потенциал. Станьте сильнее каждый день.
+            Покоряй стремительные пороги. Стань чемпионом.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -147,19 +146,19 @@ const Index = () => {
           
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl font-black text-accent mb-2">500+</div>
-              <div className="text-white/90 font-medium">Участников</div>
+              <div className="text-5xl font-black text-accent mb-2">120+</div>
+              <div className="text-white/90 font-medium">Спортсменов</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-black text-accent mb-2">15+</div>
-              <div className="text-white/90 font-medium">Направлений</div>
+              <div className="text-5xl font-black text-accent mb-2">3</div>
+              <div className="text-white/90 font-medium">Олимпийца</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-black text-accent mb-2">24/7</div>
-              <div className="text-white/90 font-medium">Доступ</div>
+              <div className="text-5xl font-black text-accent mb-2">250м</div>
+              <div className="text-white/90 font-medium">Трасса</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-black text-accent mb-2">8</div>
+              <div className="text-5xl font-black text-accent mb-2">15</div>
               <div className="text-white/90 font-medium">Лет опыта</div>
             </div>
           </div>
@@ -204,7 +203,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-secondary/5 to-primary/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-foreground">
-            Расписание занятий
+            Расписание тренировок
           </h2>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
           
@@ -302,7 +301,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-secondary/5 to-primary/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-foreground">
-            Атмосфера клуба
+            Тренировки на воде
           </h2>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
           
@@ -327,10 +326,10 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-secondary via-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6">
-            Готовы начать?
+            Готовы покорить поток?
           </h2>
           <p className="text-xl md:text-2xl mb-10 text-white/90 font-light">
-            Первое занятие бесплатно! Присоединяйтесь к нашей команде
+            Первая тренировка бесплатно! Всё снаряжение предоставляется
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

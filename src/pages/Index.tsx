@@ -7,6 +7,7 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [selectedDay, setSelectedDay] = useState('Понедельник');
+  const [selectedSection, setSelectedSection] = useState<string | null>(null);
 
   const schedule = {
     'Понедельник': [
@@ -56,22 +57,52 @@ const Index = () => {
     {
       icon: 'Waves',
       title: 'Гребной слалом К1',
-      description: 'Каяк-одиночка - классическая дисциплина для начинающих и профессионалов'
+      description: 'Каяк-одиночка - классическая дисциплина для начинающих и профессионалов',
+      details: 'К1 (каяк-одиночка) — олимпийская дисциплина гребного слалома. Спортсмен сидит в лодке лицом вперед и использует двухлопастное весло.',
+      facts: [
+        'Длина каяка К1: 3,5 метра, минимальный вес 9 кг',
+        'На трассе располагается 18-25 ворот, которые нужно пройти за минимальное время',
+        'Красно-белые ворота проходятся против течения',
+        'Зелено-белые ворота проходятся по течению',
+        'Касание ворот веслом или лодкой добавляет 2 секунды штрафа',
+        'Пропуск ворот или их прохождение в неправильном направлении добавляет 50 секунд'
+      ]
     },
     {
       icon: 'Trophy',
       title: 'Слалом С1',
-      description: 'Каноэ-одиночка - высший пилотаж гребного слалома'
+      description: 'Каноэ-одиночка - высший пилотаж гребного слалома',
+      details: 'С1 (каноэ-одиночка) — самая техничная дисциплина. Спортсмен стоит на одном колене и использует однолопастное весло.',
+      facts: [
+        'Длина каноэ С1: 3,5 метра, минимальный вес 10 кг',
+        'Требует отличного баланса и силы корпуса',
+        'Спортсмен гребет только с одной стороны, меняя сторону по необходимости',
+        'Считается самой зрелищной дисциплиной гребного слалома'
+      ]
     },
     {
       icon: 'Users',
       title: 'Юниорские группы',
-      description: 'Программы подготовки для детей от 8 лет с опытными тренерами'
+      description: 'Программы подготовки для детей от 8 лет с опытными тренерами',
+      details: 'Специальные программы для детей и подростков. Обучение с нуля до участия в соревнованиях.',
+      facts: [
+        'Принимаем детей от 8 лет',
+        'Все снаряжение предоставляется',
+        'Безопасность — наш приоритет: шлемы, жилеты, инструктаж',
+        'Участие в региональных и всероссийских соревнованиях'
+      ]
     },
     {
       icon: 'Zap',
       title: 'Бурная вода',
-      description: 'Искусственная трасса с регулируемым потоком для тренировок'
+      description: 'Искусственная трасса с регулируемым потоком для тренировок',
+      details: 'Современная тренировочная база с искусственным порогом для круглогодичных тренировок.',
+      facts: [
+        'Длина трассы: 250 метров',
+        'Регулируемый поток воды',
+        'Возможность установки различных конфигураций ворот',
+        'Тренировки возможны в любое время года'
+      ]
     }
   ];
 
@@ -168,6 +199,7 @@ const Index = () => {
                 key={index} 
                 className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary cursor-pointer overflow-hidden animate-slide-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => setSelectedSection(selectedSection === section.title ? null : section.title)}
               >
                 <CardContent className="p-8 text-center">
                   <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -179,6 +211,24 @@ const Index = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     {section.description}
                   </p>
+                  {selectedSection === section.title && (
+                    <div className="mt-6 pt-6 border-t border-primary/20 text-left space-y-4 animate-fade-in">
+                      <p className="text-sm font-medium text-foreground">
+                        {section.details}
+                      </p>
+                      <div className="space-y-2">
+                        <h4 className="font-bold text-primary text-sm">Факты:</h4>
+                        <ul className="space-y-2">
+                          {section.facts?.map((fact, i) => (
+                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                              <Icon name="Check" size={16} className="text-primary mt-0.5 flex-shrink-0" />
+                              <span>{fact}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

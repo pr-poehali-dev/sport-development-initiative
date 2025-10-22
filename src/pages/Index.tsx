@@ -592,7 +592,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">2018 год - Начало проекта</h3>
+                  <h3 className="text-2xl font-bold mb-2">2010 год - Начало проекта</h3>
                   <p className="text-muted-foreground">Принято решение о строительстве первого в Башкортостане гребного канала с искусственными порогами для развития водных видов спорта.</p>
                 </div>
               </div>

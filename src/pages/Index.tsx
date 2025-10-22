@@ -628,7 +628,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">2022-2025 - Развитие</h3>
+                  <h3 className="text-2xl font-bold mb-2">2025 год - Развитие</h3>
                   <p className="text-muted-foreground">Проведение всероссийских соревнований, подготовка спортсменов сборной. Канал стал центром развития гребного слалома в Приволжском регионе.</p>
                 </div>
               </div>

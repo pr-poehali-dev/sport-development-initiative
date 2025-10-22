@@ -155,13 +155,13 @@ const Index = () => {
     },
     {
       image: 'https://cdn.poehali.dev/files/2e16a6a0-9fbc-4ec7-9509-cd59c2372fc7.png',
-      name: '',
-      location: ''
+      name: 'Гребной канал «Окуловка»',
+      location: 'Новгородская область'
     },
     {
       image: 'https://cdn.poehali.dev/files/bd54fa8f-0e9b-4ea2-97da-294ef8f0546b.png',
-      name: '',
-      location: ''
+      name: 'Гребной канал «Окуловка»',
+      location: 'Новгородская область'
     }
   ];
 

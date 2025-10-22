@@ -616,7 +616,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">2021 год - Открытие канала</h3>
+                  <h3 className="text-2xl font-bold mb-2">2024 год - Открытие канала</h3>
                   <p className="text-muted-foreground">Торжественное открытие гребного канала «Аврора». Первые тренировки и соревнования регионального уровня.</p>
                 </div>
               </div>

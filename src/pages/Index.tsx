@@ -681,7 +681,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-foreground">
-            Резидент Федерации гребного слалома России
+            Президент Федерации гребного слалома России
           </h2>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
           

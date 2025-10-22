@@ -150,8 +150,8 @@ const Index = () => {
     },
     {
       image: 'https://cdn.poehali.dev/files/4964ac58-6bed-4f11-8dc3-09921d320d5f.png',
-      name: 'Гребной канал «Окуловка»',
-      location: 'Новгородская область'
+      name: 'Гребной канал «Москва»',
+      location: 'Москва, Крылатское'
     },
     {
       image: 'https://cdn.poehali.dev/files/2e16a6a0-9fbc-4ec7-9509-cd59c2372fc7.png',

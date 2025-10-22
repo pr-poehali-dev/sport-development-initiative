@@ -136,22 +136,22 @@ const Index = () => {
     {
       name: 'Каяк для слалома',
       description: 'Профессиональный каяк для гребного слалома',
-      image: 'https://cdn.poehali.dev/files/placeholder-kayak-slalom.jpg'
+      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/c9f6a7bd-f36a-4477-aa42-f63876726d18.jpg'
     },
     {
       name: 'Каяк для экстрима',
       description: 'Укороченный каяк для трюков и фристайла',
-      image: 'https://cdn.poehali.dev/files/placeholder-kayak-extreme.jpg'
+      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/4a41edbf-95a5-4ae0-a01c-76f047b57e74.jpg'
     },
     {
       name: 'Каноэ K-1',
       description: 'Одноместный каноэ для индивидуальных заездов',
-      image: 'https://cdn.poehali.dev/files/placeholder-canoe-k1.jpg'
+      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/e64bcefe-3c1b-4241-a1c6-1c50422d2dae.jpg'
     },
     {
       name: 'Каноэ C-2',
       description: 'Двухместный каноэ для командных гонок',
-      image: 'https://cdn.poehali.dev/files/placeholder-canoe-c2.jpg'
+      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/98dcd75a-d307-43b8-b59b-6745a3646303.jpg'
     }
   ];
 

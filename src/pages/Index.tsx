@@ -464,10 +464,10 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-secondary/5 to-primary/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-foreground">
-            Наш канал России
+            Наши каналы России
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Современный гребной канал с искусственными порогами — идеальное место для тренировок и соревнований мирового уровня
+            Современные гребные каналы с искусственными порогами — идеальные места для тренировок и соревнований мирового уровня
           </p>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
           

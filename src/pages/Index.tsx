@@ -685,84 +685,12 @@ const Index = () => {
           </h2>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
           
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <Card className="border-2 border-primary/20">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Award" className="text-primary" size={32} />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-2">Официальный статус</h3>
-                      <p className="text-muted-foreground">Гребной канал «Аврора» является официальным резидентом Федерации гребного слалома России</p>
-                    </div>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Это означает, что наш канал соответствует всем международным стандартам и требованиям для проведения официальных соревнований различного уровня.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
-                    <Icon name="CheckCircle2" className="text-primary" size={24} />
-                    Преимущества статуса резидента
-                  </h4>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                      <span className="text-muted-foreground">Проведение всероссийских и международных соревнований</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                      <span className="text-muted-foreground">Подготовка спортсменов сборных команд России</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                      <span className="text-muted-foreground">Доступ к методикам и программам федерации</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                      <span className="text-muted-foreground">Сертификация тренеров по стандартам FГСР</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8">
-                <Icon name="Medal" className="text-primary mb-6" size={64} />
-                <h3 className="text-3xl font-bold mb-4">Центр развития спорта</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Канал «Аврора» играет ключевую роль в развитии гребного слалома в Приволжском федеральном округе и является площадкой для подготовки будущих чемпионов.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white rounded-2xl p-4 shadow-lg">
-                    <div className="text-3xl font-black text-primary mb-1">15+</div>
-                    <div className="text-sm text-muted-foreground">Соревнований в год</div>
-                  </div>
-                  <div className="bg-white rounded-2xl p-4 shadow-lg">
-                    <div className="text-3xl font-black text-primary mb-1">50+</div>
-                    <div className="text-sm text-muted-foreground">Тренировочных сборов</div>
-                  </div>
-                </div>
-              </div>
-
-              <Card className="bg-gradient-to-br from-primary to-secondary text-white border-0">
-                <CardContent className="p-6">
-                  <h4 className="font-bold text-xl mb-4 flex items-center gap-2">
-                    <Icon name="Target" size={28} />
-                    Наша миссия
-                  </h4>
-                  <p className="text-white/90 leading-relaxed">
-                    Создание условий мирового уровня для развития гребного слалома в России, воспитание новых поколений спортсменов и популяризация водных видов спорта.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src="https://cdn.poehali.dev/files/ac9cdba3-b130-41c0-8303-0eb6cd34f366.png" 
+              alt="Президент Федерации гребного слалома России"
+              className="w-full rounded-3xl shadow-2xl"
+            />
           </div>
         </div>
       </section>

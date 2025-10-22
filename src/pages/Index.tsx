@@ -132,6 +132,11 @@ const Index = () => {
     'https://cdn.poehali.dev/files/cf2c0e17-a02c-491f-9796-0379710ea67c.jpg'
   ];
 
+  const canalGallery = [
+    'https://cdn.poehali.dev/files/101b4a66-702d-4592-b849-be40d9d2931c.jpg',
+    'https://cdn.poehali.dev/files/95700d3f-a315-4f34-870a-740221712240.jpg'
+  ];
+
   const boats = [
     {
       name: 'Каяк для слалома',
@@ -448,6 +453,34 @@ const Index = () => {
                 <img 
                   src={image} 
                   alt={`Team ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-secondary/5 to-primary/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Наш канал России
+          </h2>
+          <p className="text-center text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Современный гребной канал с искусственными порогами — идеальное место для тренировок и соревнований мирового уровня
+          </p>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {canalGallery.map((image, index) => (
+              <div 
+                key={index} 
+                className="aspect-video rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group animate-fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <img 
+                  src={image} 
+                  alt={`Canal ${index + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>

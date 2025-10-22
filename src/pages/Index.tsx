@@ -576,6 +576,108 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            История строительства канала в Башкирии
+          </h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="Calendar" className="text-primary" size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">2018 год - Начало проекта</h3>
+                  <p className="text-muted-foreground">Принято решение о строительстве первого в Башкортостане гребного канала с искусственными порогами для развития водных видов спорта.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="HardHat" className="text-primary" size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">2019-2020 - Строительство</h3>
+                  <p className="text-muted-foreground">Активная фаза строительства с привлечением лучших специалистов в области водных сооружений. Создание системы регулируемого потока.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="Award" className="text-primary" size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">2021 год - Открытие канала</h3>
+                  <p className="text-muted-foreground">Торжественное открытие гребного канала «Аврора». Первые тренировки и соревнования регионального уровня.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name="Trophy" className="text-primary" size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">2022-2025 - Развитие</h3>
+                  <p className="text-muted-foreground">Проведение всероссийских соревнований, подготовка спортсменов сборной. Канал стал центром развития гребного слалома в Приволжском регионе.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <Card className="overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Icon name="Ruler" className="text-primary" size={32} />
+                    <div>
+                      <h4 className="font-bold text-xl">250 метров</h4>
+                      <p className="text-muted-foreground text-sm">Длина трассы</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground">Канал соответствует международным стандартам для проведения соревнований по гребному слалому</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Icon name="Waves" className="text-primary" size={32} />
+                    <div>
+                      <h4 className="font-bold text-xl">Регулируемый поток</h4>
+                      <p className="text-muted-foreground text-sm">Современная система</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground">Возможность создавать различные уровни сложности для тренировок спортсменов любого уровня</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Icon name="Users" className="text-primary" size={32} />
+                    <div>
+                      <h4 className="font-bold text-xl">500+ спортсменов</h4>
+                      <p className="text-muted-foreground text-sm">Ежегодно</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground">Тренируются на базе канала, включая членов сборных команд России</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-gradient-to-br from-secondary via-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6">

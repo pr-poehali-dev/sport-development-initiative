@@ -134,7 +134,11 @@ const Index = () => {
 
   const canalGallery = [
     'https://cdn.poehali.dev/files/101b4a66-702d-4592-b849-be40d9d2931c.jpg',
-    'https://cdn.poehali.dev/files/95700d3f-a315-4f34-870a-740221712240.jpg'
+    'https://cdn.poehali.dev/files/95700d3f-a315-4f34-870a-740221712240.jpg',
+    'https://cdn.poehali.dev/files/981045cd-e291-4ca5-8d78-f6d93a6bbb19.png',
+    'https://cdn.poehali.dev/files/4964ac58-6bed-4f11-8dc3-09921d320d5f.png',
+    'https://cdn.poehali.dev/files/2e16a6a0-9fbc-4ec7-9509-cd59c2372fc7.png',
+    'https://cdn.poehali.dev/files/bd54fa8f-0e9b-4ea2-97da-294ef8f0546b.png'
   ];
 
   const boats = [

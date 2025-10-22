@@ -140,8 +140,8 @@ const Index = () => {
     },
     {
       image: 'https://cdn.poehali.dev/files/95700d3f-a315-4f34-870a-740221712240.jpg',
-      name: 'Гребной канал «Южный»',
-      location: 'Сочи, Краснодарский край'
+      name: '',
+      location: ''
     },
     {
       image: 'https://cdn.poehali.dev/files/981045cd-e291-4ca5-8d78-f6d93a6bbb19.png',
@@ -150,18 +150,18 @@ const Index = () => {
     },
     {
       image: 'https://cdn.poehali.dev/files/4964ac58-6bed-4f11-8dc3-09921d320d5f.png',
-      name: 'Гребной канал «Победа»',
-      location: 'Санкт-Петербург'
+      name: '',
+      location: ''
     },
     {
       image: 'https://cdn.poehali.dev/files/2e16a6a0-9fbc-4ec7-9509-cd59c2372fc7.png',
-      name: 'Гребной канал «Олимпийский»',
-      location: 'Казань, Татарстан'
+      name: '',
+      location: ''
     },
     {
       image: 'https://cdn.poehali.dev/files/bd54fa8f-0e9b-4ea2-97da-294ef8f0546b.png',
-      name: 'Гребной канал «Сибирь»',
-      location: 'Новосибирск'
+      name: '',
+      location: ''
     }
   ];
 
@@ -508,16 +508,18 @@ const Index = () => {
               >
                 <img 
                   src={canal.image} 
-                  alt={canal.name}
+                  alt={canal.name || 'Гребной канал'}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6">
-                  <h3 className="text-white font-bold text-xl mb-1">{canal.name}</h3>
-                  <p className="text-white/90 text-sm flex items-center gap-2">
-                    <Icon name="MapPin" size={16} />
-                    {canal.location}
-                  </p>
-                </div>
+                {canal.name && (
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6">
+                    <h3 className="text-white font-bold text-xl mb-1">{canal.name}</h3>
+                    <p className="text-white/90 text-sm flex items-center gap-2">
+                      <Icon name="MapPin" size={16} />
+                      {canal.location}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>

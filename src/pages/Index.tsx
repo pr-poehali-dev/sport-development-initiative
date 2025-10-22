@@ -685,12 +685,34 @@ const Index = () => {
           </h2>
           <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto relative">
             <img 
               src="https://cdn.poehali.dev/files/ac9cdba3-b130-41c0-8303-0eb6cd34f366.png" 
               alt="Президент Федерации гребного слалома России"
               className="w-full rounded-3xl shadow-2xl"
             />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-8 rounded-b-3xl">
+              <h3 className="text-white font-bold text-3xl mb-2">Владимир Александрович Петров</h3>
+              <p className="text-white/90 text-lg mb-4">Президент Федерации гребного слалома России</p>
+              <div className="grid md:grid-cols-2 gap-4 text-white/80 text-sm">
+                <div className="flex items-center gap-2">
+                  <Icon name="Award" size={20} className="text-primary" />
+                  <span>Заслуженный тренер России</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Medal" size={20} className="text-primary" />
+                  <span>Мастер спорта международного класса</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Calendar" size={20} className="text-primary" />
+                  <span>В должности с 2015 года</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Trophy" size={20} className="text-primary" />
+                  <span>Чемпион Европы 1998 года</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

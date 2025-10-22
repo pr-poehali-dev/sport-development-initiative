@@ -140,8 +140,8 @@ const Index = () => {
     },
     {
       image: 'https://cdn.poehali.dev/files/95700d3f-a315-4f34-870a-740221712240.jpg',
-      name: '',
-      location: ''
+      name: 'Гребной канал «Аврора»',
+      location: 'Уфа, Башкортостан'
     },
     {
       image: 'https://cdn.poehali.dev/files/981045cd-e291-4ca5-8d78-f6d93a6bbb19.png',

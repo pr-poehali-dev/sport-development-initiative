@@ -493,6 +493,56 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Работники канала
+          </h2>
+          <p className="text-center text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Наша команда профессионалов обеспечивает безопасность и качество тренировок
+          </p>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in">
+              <CardContent className="p-0">
+                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                  <Icon name="User" size={80} className="text-primary/30" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Директор канала</h3>
+                  <p className="text-muted-foreground">Управление комплексом и организация соревнований</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-0">
+                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                  <Icon name="Wrench" size={80} className="text-primary/30" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Технический персонал</h3>
+                  <p className="text-muted-foreground">Обслуживание оборудования и контроль потока воды</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-0">
+                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                  <Icon name="ShieldCheck" size={80} className="text-primary/30" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Служба безопасности</h3>
+                  <p className="text-muted-foreground">Обеспечение безопасности спортсменов на воде</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-gradient-to-br from-secondary via-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6">

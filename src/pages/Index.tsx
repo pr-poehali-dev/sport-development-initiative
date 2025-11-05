@@ -43,7 +43,7 @@ const Index = () => {
       name: 'Валентина Петровна',
       specialty: 'Заслуженный тренер Башкирии',
       experience: '20 лет опыта',
-      image: 'https://cdn.poehali.dev/projects/d70e44f8-2f91-4fed-9bef-d225a8b2f111/files/3f7e9e3a-f392-48d3-bcfa-ad1014dc6ade.jpg'
+      image: 'https://cdn.poehali.dev/files/b1c166ac-0046-4826-a53b-58614e826728.png'
     },
     {
       name: 'Николай Сергеевич',

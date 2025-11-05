@@ -560,12 +560,17 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0">
-                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
-                  <Icon name="Wrench" size={80} className="text-primary/30" />
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="https://cdn.poehali.dev/files/89eda7e7-b804-42f0-ae4e-a7fc55841105.png" 
+                    alt="Главный инженер"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Главный инженер</h3>
-                  <p className="text-muted-foreground">Обслуживание оборудования и контроль потока воды</p>
+                  <p className="text-muted-foreground mb-3">Обслуживание оборудования и контроль потока воды</p>
+                  <p className="font-medium text-foreground">Пономарёв Евгений Константинович</p>
                 </div>
               </CardContent>
             </Card>
@@ -577,7 +582,8 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Администратор</h3>
-                  <p className="text-muted-foreground">Обеспечение безопасности спортсменов на воде</p>
+                  <p className="text-muted-foreground mb-3">Обеспечение безопасности спортсменов на воде</p>
+                  <p className="font-medium text-foreground">Кулешов Вадим Андреевич</p>
                 </div>
               </CardContent>
             </Card>
@@ -589,7 +595,8 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Ремонтировщик плоскостных спортивных сооружений</h3>
-                  <p className="text-muted-foreground">Поддержание в рабочем состоянии спортивных площадок и сооружений</p>
+                  <p className="text-muted-foreground mb-3">Поддержание в рабочем состоянии спортивных площадок и сооружений</p>
+                  <p className="font-medium text-foreground">Перепелов Игорь Олегович</p>
                 </div>
               </CardContent>
             </Card>

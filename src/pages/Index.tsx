@@ -769,7 +769,7 @@ const Index = () => {
                 <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
                   <Icon name="TrendingUp" size={40} className="text-white" />
                 </div>
-                <div className="text-5xl font-black text-primary mb-2">8-18</div>
+                <div className="text-5xl font-black text-primary mb-2">8-∞</div>
                 <p className="text-muted-foreground font-medium">Возраст спортсменов</p>
               </CardContent>
             </Card>

@@ -564,7 +564,7 @@ const Index = () => {
                   <Icon name="Wrench" size={80} className="text-primary/30" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Технический персонал</h3>
+                  <h3 className="text-xl font-bold mb-2">Главный инженер</h3>
                   <p className="text-muted-foreground">Обслуживание оборудования и контроль потока воды</p>
                 </div>
               </CardContent>
@@ -576,8 +576,20 @@ const Index = () => {
                   <Icon name="ShieldCheck" size={80} className="text-primary/30" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Служба безопасности</h3>
+                  <h3 className="text-xl font-bold mb-2">Администратор</h3>
                   <p className="text-muted-foreground">Обеспечение безопасности спортсменов на воде</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <CardContent className="p-0">
+                <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                  <Icon name="HardHat" size={80} className="text-primary/30" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Ремонтировщик плоскостных спортивных сооружений</h3>
+                  <p className="text-muted-foreground">Поддержание в рабочем состоянии спортивных площадок и сооружений</p>
                 </div>
               </CardContent>
             </Card>

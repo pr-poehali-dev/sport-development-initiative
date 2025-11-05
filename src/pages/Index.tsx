@@ -746,6 +746,63 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Количество детей в Гребном Слаломе
+          </h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 rounded-full" />
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Icon name="Users" size={40} className="text-white" />
+                </div>
+                <div className="text-5xl font-black text-primary mb-2">120+</div>
+                <p className="text-muted-foreground font-medium">Детей занимаются</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Icon name="TrendingUp" size={40} className="text-white" />
+                </div>
+                <div className="text-5xl font-black text-primary mb-2">8-18</div>
+                <p className="text-muted-foreground font-medium">Возраст спортсменов</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Icon name="Award" size={40} className="text-white" />
+                </div>
+                <div className="text-5xl font-black text-primary mb-2">25+</div>
+                <p className="text-muted-foreground font-medium">Призёров соревнований</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-gradient-to-r from-primary to-secondary text-white border-0">
+            <CardContent className="p-8">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="flex-shrink-0">
+                  <Icon name="Heart" size={64} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Развитие юных спортсменов</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    Гребной канал «Аврора» активно развивает детский спорт в Башкортостане. Наши воспитанники регулярно занимают призовые места на региональных и всероссийских соревнованиях. Мы создаём условия для того, чтобы каждый ребёнок мог раскрыть свой потенциал и стать чемпионом.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-gradient-to-br from-secondary via-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6">

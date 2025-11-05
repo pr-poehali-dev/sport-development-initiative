@@ -553,7 +553,8 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Директор канала</h3>
-                  <p className="text-muted-foreground">Управление комплексом и организация соревнований</p>
+                  <p className="text-muted-foreground mb-3">Управление комплексом и организация соревнований</p>
+                  <p className="font-medium text-foreground">Игнатьев Михаил Анатольевич</p>
                 </div>
               </CardContent>
             </Card>

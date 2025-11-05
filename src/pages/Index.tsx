@@ -803,6 +803,92 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-black text-center mb-4 text-foreground">
+            Наши призёры по миру
+          </h2>
+          <p className="text-center text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Воспитанники канала «Аврора» представляют Россию на международных соревнованиях
+          </p>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 rounded-full" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-primary/20">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center">
+                  <Icon name="Medal" size={32} className="text-white" />
+                </div>
+                <div className="text-4xl font-black text-primary mb-2">15</div>
+                <p className="text-muted-foreground font-medium">Золотых медалей</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-primary/20">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full flex items-center justify-center">
+                  <Icon name="Medal" size={32} className="text-white" />
+                </div>
+                <div className="text-4xl font-black text-primary mb-2">22</div>
+                <p className="text-muted-foreground font-medium">Серебряных медалей</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-primary/20">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                  <Icon name="Medal" size={32} className="text-white" />
+                </div>
+                <div className="text-4xl font-black text-primary mb-2">18</div>
+                <p className="text-muted-foreground font-medium">Бронзовых медалей</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-primary/20">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Icon name="Globe" size={32} className="text-white" />
+                </div>
+                <div className="text-4xl font-black text-primary mb-2">12</div>
+                <p className="text-muted-foreground font-medium">Стран участия</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon name="Trophy" className="text-primary" size={28} />
+                  <h3 className="font-bold text-lg">Чемпионаты Европы</h3>
+                </div>
+                <p className="text-muted-foreground">Наши спортсмены регулярно попадают в финалы и завоёвывают медали на европейских первенствах</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon name="Star" className="text-primary" size={28} />
+                  <h3 className="font-bold text-lg">Кубки мира</h3>
+                </div>
+                <p className="text-muted-foreground">Участие в этапах Кубка мира по гребному слалому с достойными результатами</p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon name="Target" className="text-primary" size={28} />
+                  <h3 className="font-bold text-lg">Олимпийские надежды</h3>
+                </div>
+                <p className="text-muted-foreground">Подготовка перспективных спортсменов для участия в Олимпийских играх</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-gradient-to-br from-secondary via-primary to-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-black mb-6">

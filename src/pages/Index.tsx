@@ -720,7 +720,7 @@ const Index = () => {
               className="w-full rounded-3xl shadow-2xl"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-8 rounded-b-3xl">
-              <h3 className="text-white font-bold text-3xl mb-2">Владимир Александрович Петров</h3>
+              <h3 className="text-white font-bold text-3xl mb-2">Сергей Павлович Папуш</h3>
               <p className="text-white/90 text-lg mb-4">Президент Федерации гребного слалома России</p>
               <div className="grid md:grid-cols-2 gap-4 text-white/80 text-sm">
                 <div className="flex items-center gap-2">

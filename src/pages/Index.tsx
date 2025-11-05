@@ -350,15 +350,24 @@ const Index = () => {
           
           <Tabs value={selectedDay} onValueChange={setSelectedDay} className="w-full">
             <TabsList className="grid w-full grid-cols-7 mb-8 bg-white shadow-lg rounded-2xl p-2 h-auto">
-              {Object.keys(schedule).map((day) => (
-                <TabsTrigger 
-                  key={day} 
-                  value={day}
-                  className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-secondary data-[state=active]:text-white font-bold py-3 rounded-xl transition-all"
-                >
-                  {day.slice(0, 2)}
-                </TabsTrigger>
-              ))}
+              {Object.keys(schedule).map((day) => {
+                const shortName = day === 'Понедельник' ? 'Пн' :
+                                  day === 'Вторник' ? 'Вт' :
+                                  day === 'Среда' ? 'Ср' :
+                                  day === 'Четверг' ? 'Чт' :
+                                  day === 'Пятница' ? 'Пт' :
+                                  day === 'Суббота' ? 'Сб' :
+                                  day === 'Воскресенье' ? 'Вс' : day.slice(0, 2);
+                return (
+                  <TabsTrigger 
+                    key={day} 
+                    value={day}
+                    className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-secondary data-[state=active]:text-white font-bold py-3 rounded-xl transition-all"
+                  >
+                    {shortName}
+                  </TabsTrigger>
+                );
+              })}
             </TabsList>
             
             {Object.entries(schedule).map(([day, classes]) => (

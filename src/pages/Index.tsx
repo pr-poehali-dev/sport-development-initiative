@@ -806,7 +806,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-black text-center mb-4 text-foreground">
-            Наши призёры по миру
+            Наши призёры по всем странам
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Воспитанники канала «Аврора» представляют Россию на международных соревнованиях
